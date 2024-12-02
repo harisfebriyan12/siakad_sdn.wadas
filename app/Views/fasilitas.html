@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fasilitas Sekolah Anjing</title>
+
+    <!-- Link ke Slick CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f7f7f7;
+            color: #333;
+            padding: 20px;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #2C3E50;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+        }
+
+        /* Slick Slider Styles */
+        .slick-slider {
+            margin-bottom: 50px;
+        }
+
+        .slick-slide img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .slick-slide img:hover {
+            transform: scale(1.05);
+        }
+
+        .slick-prev, .slick-next {
+            font-size: 20px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        /* Styling untuk deskripsi gambar */
+        .facility-description {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .facility-description {
+                font-size: 1rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Fasilitas Sekolah Anjing</h1>
+            <p>Temukan fasilitas terbaik untuk anjing Anda di sekolah kami!</p>
+        </div>
+
+        <!-- Slick Slider for Facilities -->
+        <div class="slick-slider">
+            <div><img src="Logo.jpeg" alt="Fasilitas 1"><div class="facility-description">Area Bermain untuk Anjing</div></div>
+            <div><img src="https://via.placeholder.com/800x400/48C9B0/ffffff?text=Fasilitas+Sekolah+Anjing+2" alt="Fasilitas 2"><div class="facility-description">Tempat Latihan dan Kelas</div></div>
+            <div><img src="https://via.placeholder.com/800x400/FF7F50/ffffff?text=Fasilitas+Sekolah+Anjing+3" alt="Fasilitas 3"><div class="facility-description">Pavilion dan Kamar Tidur</div></div>
+            <div><img src="https://via.placeholder.com/800x400/9B59B6/ffffff?text=Fasilitas+Sekolah+Anjing+4" alt="Fasilitas 4"><div class="facility-description">Kolam Renang untuk Anjing</div></div>
+        </div>
+
+    </div>
+
+    <!-- Link ke Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            // Menginisialisasi Slick Slider
+            $('.slick-slider').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                prevArrow: '<button class="slick-prev">←</button>',
+                nextArrow: '<button class="slick-next">→</button>',
+            });
+        });
+    </script>
+
+</body>
+</html>
